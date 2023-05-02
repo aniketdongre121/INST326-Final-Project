@@ -1,3 +1,9 @@
+"""
+Sana Amjad, Aniket Dongre, Favor Umeobi, Joshua Santos
+INST326
+Assignment: Final Project
+Date: 4_29_2023
+"""
 import os
 import sqlite3
 from tkinter import *
@@ -14,6 +20,9 @@ root.geometry("500x400")
 
 # Create a function to connect to the database
 def connect():
+  """
+  Connects to the contact database and creates a contacts table if it does not exist.
+  """
   conn = sqlite3.connect("address_book.db")
   cursor = conn.cursor()
   cursor.execute("""
@@ -31,11 +40,19 @@ def connect():
 
 # Create a function to display a message box
 def show_message_box(title, message):
+  """
+  Parameters:
+  title(str): Title of message box.
+  message(str): Message that is displayed in the message box.
+  """
   messagebox.showinfo(title, message)
 
 
 # Create a function to add a new contact
 def add_contact():
+  """
+  Adds a new contact to the contact database using input values in the entry fields. There is also a success box when completed, clears the inputs field.
+  """
   # Get input from the user
   first_name = first_name_entry.get()
   last_name = last_name_entry.get()
