@@ -8,6 +8,7 @@ import os
 import sqlite3
 from tkinter import *
 from tkinter import messagebox
+from prettytable import Prettytable
 
 # Set TK_SILENCE_DEPRECATION to suppress the warning
 os.environ['TK_SILENCE_DEPRECATION'] = '1'
@@ -81,6 +82,32 @@ def add_contact():
   last_name_entry.delete(0, END)
   email_entry.delete(0, END)
   phone_entry.delete(0, END)
+  
+def view_contacts():
+  """
+  Retrieves all the contacts from the contact database and displays in the message box.
+  """
+  # Connect to the database
+  conn = sqlite3.connect("contacts.db")
+  cursor = conn.cursor()
+
+  # Get all contacts from the database
+  cursor.execute("SELECT * FROM contacts")
+  rows = cursor.fetchall()
+
+  # Close the database connection
+  conn.close()
+
+  # Create a pretty table to display the contacts
+  table = PrettyTable()
+  table.field_names = ["ID", "First Name", "Last Name", "Email", "Phone"]
+
+  # Add rows to the table
+  for row in rows:
+    table.add_row(row)
+
+  # Display the table in a message box
+  show_message_box("Contacts", str(table))
 
 
 # Create labels and entry fields for input
