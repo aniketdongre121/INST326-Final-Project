@@ -13,7 +13,9 @@ This program has two windows: a login window and a contact management applicatio
 4. Open a terminal or command prompt and navigate to the directory where you saved the file.
 5. Run the program by typing "python contact_manager.py" in the terminal and press Enter.
 6. The login window will appear, and you will be prompted to enter a username and password. Enter "admin" for the username and "password" for the password, then click the "Login" button.
-7. If the username and password are correct, the contact management application window will appear. You can use the application to add, view, and delete contacts from a database.
+7. If the username and password are correct, the contact management application window will appear. You can use the application to add, view, and delete contacts from a database
+
+*Using Replit is also an easy way to see the output, unit tests, etc
 
 # How to Use and Interpret the Program
 To use the program, you first need to run it in a Python environment. You can do this by copying the code into a Python file and running it using a Python interpreter. Once the program is running, you will be prompted to log in using the username and password specified in the code.
