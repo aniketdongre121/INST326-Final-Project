@@ -15,6 +15,11 @@ This program has two windows: a login window and a contact management applicatio
 7. If the username and password are correct, the contact management application window will appear. You can use the application to add, view, and delete contacts from a database.
 
 # How to Use and Interpret the Program
+To use the program, you first need to run it in a Python environment. You can do this by copying the code into a Python file and running it using a Python interpreter. Once the program is running, you will be prompted to log in using the username and password specified in the code.
+
+After logging in, you will be taken to the contact management window. From here, you can add new contacts by filling in the fields in the "Add Contact" section and clicking the "Add" button. You can view all existing contacts by clicking the "View Contacts" button, which will display them in a message box. To delete a contact, click the "Delete Contact" button, which will open a popup window asking for the ID of the contact to be deleted.
+
+The program uses SQLite to store contact information in a database. The "connect" function is used to establish a connection to the database and create a "contacts" table if it does not already exist. The "add_contact" function inserts new contacts into the table using the input values entered by the user. The "view_contacts" function retrieves all contacts from the database and displays them in a pretty table. The "delete_contact" function allows the user to delete a contact from the database based on its ID.
 
 
 # Bibliography 
