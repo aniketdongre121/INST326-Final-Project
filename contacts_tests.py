@@ -46,5 +46,12 @@ def test_(self):
   # Test deleting an existing contact with valid data
         id_entry = "1"
         self.assertEqual(delete_contacts(), None)
+      
+ #connect
+def test_(self):
+  # Testing to make sure that database is connected
+            self.assertEqual(connect(), None)
+
+
 
        
