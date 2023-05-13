@@ -39,3 +39,12 @@ def test_(self):
         username_entry.insert(0, "invalid_username")
         password_entry.insert(0, "invalid_password")
         self.assertEqual(validate_login(), None)
+        
+ 
+#delete_contacts
+def test_(self):
+  # Test deleting an existing contact with valid data
+        id_entry = "1"
+        self.assertEqual(delete_contacts(), None)
+
+       
