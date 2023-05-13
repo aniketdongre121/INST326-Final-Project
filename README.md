@@ -26,6 +26,7 @@ The program uses SQLite to store contact information in a database. The "connect
 
 
 # Bibliography 
+Other than what we learned in the class and VS and replit ide, we didn't use any extrenal sources to develop our program. We used VS and replit to help us write our program better and in a precise manner.
 
 # Replit
 This is the link to our shared Replit, where you can easily see our code, unit tests, output, etc
